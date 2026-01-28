@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+#root {
+	display: block;
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height: auto;
+}
+
+#contenedor {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1000px;
+    height: 610px;
+    margin: -305px 0 0 -500px;
+    background-image: url('../imagenes/fondo-contenedor-detalle.jpg');
+}
+#fondo-cortina {
+	background-image: url('../imagenes/cortina_log.png');
+	filter: none ;
+ 	background-repeat: no-repeat;
+	background-position: left top;
+	float: left;
+	height: 587px;
+	width: 323px;
+	margin-top: 20px;
+	position: absolute;
+	z-index: 10000000;
+
+}
+
+/* ===== CORTINA IZQUIERDA ===== */
+#fondo-cortina2 {
+    	position: absolute;
+	filter: none;
+    	margin-top: 20px;
+    	left: 0;
+	width: 323px;
+    	height: 587px;
+    	background-image: url('../imagenes/cortina_log.png');
+    	background-repeat: no-repeat;
+	background-position: left top;
+	float: left;
+	z-index: 10000000;
+
+}
+
+/* ===== CONTENIDO CENTRAL ===== */
+#contenido-centro {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    width: 663px;
+    height: 600px;
+}
+
+/* ===== LOGO CLIENTE (DGAC) ===== */
+.dgac div.fondo-cliente {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 663px;
+    height: 280px;
+    background-image: url('../imagenes/logo.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+/* ===== PANEL LOGIN ===== */
+.login {
+    position: absolute;
+    top: 0;
+    left: 682px;
+    width: 260px;
+    height: 587px;
+    background-image: url('../imagenes/fondo-login.png');
+    border-radius: 0 0 5px 5px;
+}
+
+/* ===== DATOS LOGIN ===== */
+#datos-login {
+    width: 200px;
+    padding-right: 40px;
+    height: 587px;
+}
+
+/* ===== LOGO SYNAPSIS / DGAC ===== */
+.dgac #datos-login .logo-synapsis {
+    width: 148px;
+    height: 100px;
+    margin-top: 80px;
+    float: right;
+    background-image: url('../imagenes/logo-synapsis.png');
+    background-repeat: no-repeat;
+}
+
+/* ===== TEXTO ===== */
+#datos-login  .texto {
+	color: #FFFFFF;
+	font-size: 18px;
+	float: right;
+	margin-top: 0px;
+	margin-left: 50px;
+	text-align: right;
+	width: 150px;
+	line-height: 24px;
+	font-family: Myriad Pro, sans-serif;
+}
+
+#datos-login  .texto2{
+	color: #FFFFFF;
+	font-size: 18px;
+	float: right;
+	margin-top: 5px;
+	margin-left: 50px;
+	text-align: right;
+	font-weight:bold;
+	width: 150px;
+	line-height: 24px;
+	font-family: Myriad Pro, sans-serif;
+}
+
+#datos-login  .texto3{
+	color: #23c1ba;
+	font-size: 11px;
+	float: right;
+	margin-top: 5px;
+	margin-left: 0;
+	text-align: right;
+	width: 150px;
+	line-height: 24px;
+	font-family: Myriad Pro, sans-serif;
+}
+
+ul#formulario {
+	float: right;
+	width: 200px;
+	margin-top: 30px;
+}
+ul#formulario li {
+	float: right;
+	text-align: right;
+	line-height: 25px;
+	/*width: 150px;*/
+	color: #FFFFFF;
+}
+ul#submit {
+	float: right;
+	width: 150px;
+	line-height: 30px;
+}
+ul#submit  li a  {
+	color: #23c1ba;
+	background-image: url(../img/flechita.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: 70px;
+	float: right;
+	text-decoration: none;
+}
+ul#submit li a:hover {
+	color: #599d17;
+	background-image: url(../img/flechita-hover.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: 70px;
+	float: right;
+	text-decoration: none;
+}
+
+
+/* ===== FONDO INFERIOR ===== */
+.dgac .airh-synapsis {
+    position: absolute;
+    top: 420px;
+    left: 0;
+    width: 663px;
+    height: 119px;
+    background-image: url('../imagenes/synapsis_footer.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.tranparencia {
+	filter:alpha(opacity=40); /* IE */
+	-moz-opacity:0.4; /* Firefox, Opera, ... */
+	opacity: 0.4; /* CSS 3*/
+}
+
+/* ===== BOTONES ===== */
+.divBotones {
+	float: right;
+	line-height: 25px;
+	margin-top: 7px;
+}
+.btn-ayuda-login {
+	color: #000;
+	width: 70px;
+	text-decoration: none;
+	background-color: #ffc107;
+	padding: 5px 10px;
+}
+
+.btn-ayuda-login:hover {
+	color: #000;
+	background-color: #ffca2c;
+}
+
+.btn-login {
+	color: #fff;
+	width: 70px;
+	text-decoration: none;
+	background-color: #0d6efd;
+	padding: 5px 10px;
+}
+
+.btn-login:hover {
+	color: #fff;
+	background-color: #0b5ed7;
+}
+
+
