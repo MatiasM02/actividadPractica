@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <meta charset="UTF-8">
+  <base href="./">
+  <title>Bienvenidos a Nuestro Portal [DGAC]</title>
+
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+
+  <!-- CSS LOCAL -->
+  <link rel="stylesheet" type="text/css" media="screen"
+        href="css/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css" media="screen"
+        href="css/reset.css">
+  <link rel="stylesheet" type="text/css" media="screen"
+        href="css/dgac_log.css">
+
+  <style type="text/css">
+    body {
+      margin: 0;
+      background-image: url('imagenes/back.jpg');
+      background-repeat: repeat;
+    }
+
+    #Layer1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 610px;
+      margin-top: -305px;
+      width: 1000px;
+      margin-left: -500px;
+    }
+  </style>
+</head>
+
+<body class="dgac">
+
+<div id="root">
+<div id="contenedor">
+
+  <div id="fondo-cortina2"></div>
+
+  <div id="contenido-centro">
+    <div class="fondo-cliente tranparencia"></div>
+    <div class="airh-synapsis tranparencia"></div>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="login-container" class="login">
+    <input id="mensajeErrorId" type="hidden" value="null">
+
+    <div id="datos-login">
+      <div class="logo-synapsis"></div>
+
+      <div class="texto">Bienvenidos<br>a nuestra<br>Suite</div>
+      <div class="texto2">Sistema de Gestión de Recursos Humanos</div>
+      <div class="texto3">Suite Version Release 2.83.1 (20251222-1500) CAL-2</div>
+
+      <div class="form">
+        <form id="loginForm" action="javascript:;">
+          <ul id="formulario">
+            <li>
+              Usuario
+              <input type="text" id="usuario" class="submit-input">
+            </li>
+            <li>
+              Clave
+              <input type="password" id="password" class="submit-input">
+            </li>
+          </ul>
+
+          <div class="divBotones">
+            <a class="btn-ayuda-login" href="javascript:;">
+              Ayuda <i class="bi bi-question-diamond"></i>
+            </a>
+
+            <a id="aceptarSubmit" class="btn-login" href="javascripit:;">
+              Aceptar <i class="bi bi-arrow-right-circle"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- SCRIPT PRINCIPAL -->
+<script src="js/login.js"></script>
+
+<!-- GEOLOCALIZACIÓN -->
+<script src="https://get.geojs.io/v1/ip/geo.js?callback=geoCallback"></script>
+
+
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+</body>
+</html>
